@@ -65,7 +65,7 @@ pipeline {
                         }
                 }
 
-                /*stage('Update service in ECS') {
+                stage('Update service in ECS') {
                         steps {
                                 withCredentials([usernamePassword(credentialsId: 'Aws-cred2', passwordVariable: 'AWS_SECRET_ACCESS_KEY', usernameVariable: 'AWS_ACCESS_KEY_ID')]) {
                                         script {
@@ -73,7 +73,7 @@ pipeline {
                                         }
                                 }
                         }
-                }*/
+                }
         }
 }
  
