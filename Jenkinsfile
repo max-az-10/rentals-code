@@ -17,8 +17,8 @@ pipeline {
 
                 stage('Checkout Git') {
                         steps {
-                                git branch: 'main', changelog: false, credentialsId: 'Git-cred', poll: false, url: 'https://github.com/max-az-10/first_portfolio.git'
-                        }
+                        	git branch: 'main', changelog: false, credentialsId: 'Git-cred', poll: false, url: 'https://github.com/max-az-10/rentals-code.git'
+			}
                 }
 
                 stage('SonarQube Analysis') {
